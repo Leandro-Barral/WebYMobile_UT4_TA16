@@ -1,3 +1,11 @@
+import { useParams } from "react-router-dom"
+
 const Product = () => {
-    return
+    let {id} = useParams();
+
+    return(
+        <div>Producto {id}</div>
+    )
 }
+
+export default Product;

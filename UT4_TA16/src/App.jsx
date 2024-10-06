@@ -9,6 +9,7 @@ import Contact from './Pages/Contact'
 import UserContext from './Contexts/Contexts'
 import Protected from './Pages/Protected'
 import Admin from './Pages/Admin'
+import Product from './Pages/Product'
 
 function App() {
   const [userInfo, setUserInfo] = useState({
@@ -25,6 +26,7 @@ function App() {
           <Route element={<Home />} path='/'></Route>
           <Route element={<About />} path='/about'></Route>
           <Route element={<Contact />} path='contact'></Route>
+          <Route element={<Product />} path='product/:id'></Route>
         </Routes>
       </BrowserRouter>
     </UserContext.Provider>
